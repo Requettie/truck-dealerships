@@ -1,70 +1,58 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
+<html><head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>HeavyHaul Trucks</title>
+    <title>HeavyHaul Trucks | home</title>
+    <script src='https://cdn.tailwindcss.com'></script>
     <style>
-        :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; --text: #334155; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--text); line-height: 1.6; background: var(--light); }
-        nav { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
-        .nav-links a { margin-left: 2rem; text-decoration: none; color: var(--dark); font-weight: 500; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1486406146926-c627a92fb1ab?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 0 1rem; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; }
-        .btn { background: var(--primary); color: white; padding: 0.8rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
-        .btn:hover { background: #1d4ed8; }
-        .section { padding: 5rem 10%; text-align: center; }
-        .section h2 { font-size: 2.5rem; margin-bottom: 2rem; color: var(--dark); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
-        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
-        .services-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; font-size: 1.1rem; }
-        .services-list li { background: white; padding: 1rem; border-left: 4px solid var(--primary); text-align: left; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .contact { background: var(--dark); color: white; }
-        .contact h2 { color: white; }
-        .contact-form { max-width: 600px; margin: 0 auto; display: grid; gap: 1rem; }
-        .contact-form input, .contact-form textarea { padding: 1rem; border: none; border-radius: 5px; }
-        footer { background: #0f172a; color: #94a3b8; padding: 2rem 5%; text-align: center; }
+        .bg-brand-primary { background-color: #111827; }
+        .text-brand-primary { color: #111827; }
+        .border-brand-primary { border-color: #111827; }
+        .bg-brand-accent { background-color: #facc15; }
+        .text-brand-accent { color: #facc15; }
     </style>
-</head>
-<body>
-    <nav>
-        <div class='logo'>HeavyHaul Trucks</div>
-        <div class='nav-links'>
-            <a href='#home'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#services'>Services</a>
-            <a href='#contact'>Contact</a>
+</head><body><nav class='bg-white shadow-md p-4 sticky top-0 z-50'>
+    <div class='container mx-auto flex justify-between items-center'>
+        <a href='index.html' class='text-2xl font-bold text-brand-primary'>HeavyHaul Trucks</a>
+        <div class='space-x-6 font-medium text-gray-600'>
+            <a href='index.html' class='hover:text-brand-primary'>Home</a>
+            <a href='about.html' class='hover:text-brand-primary'>About</a>
+            <a href='services.html' class='hover:text-brand-primary'>Services</a>
+            <a href='contact.html' class='hover:text-brand-primary'>Contact</a>
         </div>
-    </nav>
-    <section id='home' class='hero'>
-        <h1>Built for the Long Haul</h1>
-        <p>Your partner in commercial trucking and heavy-duty vehicles.</p>
-        <a href='#contact' class='btn'>Get Started</a>
+    </div>
+</nav><main>
+    <section class='bg-brand-primary text-white py-20 px-4 text-center'>
+        <div class='container mx-auto'>
+            <h1 class='text-5xl md:text-7xl font-extrabold mb-6'>The Power to Haul</h1>
+            <p class='text-xl mb-10 max-w-2xl mx-auto opacity-90'>Supplying the heavy-duty machinery that keeps the global supply chain moving.</p>
+            <a href='services.html' class='bg-brand-accent text-gray-900 px-8 py-3 rounded-full font-bold text-lg hover:scale-105 transition'>Explore Our Services</a>
+        </div>
     </section>
-    <section id='about' class='section'>
-        <h2>About Us</h2>
-        <p>We are dedicated to excellence in our field, combining innovation with experience to deliver world-class results. Our team of experts works tirelessly to ensure that every client receives the highest quality of service.</p>
+    <section class='py-20 bg-gray-50'>
+        <div class='container mx-auto px-4 text-center'>
+            <h2 class='text-3xl font-bold mb-12'>Why Choose Us</h2>
+            <div class='grid md:grid-cols-3 gap-8'>
+                <div class='p-8 bg-white rounded-xl shadow-sm border-t-4 border-brand-primary'>
+                    <div class='text-4xl mb-4'>??</div>
+                    <h3 class='text-xl font-bold mb-2'>Innovation</h3>
+                    <p class='text-gray-600'>We push the boundaries of what's possible in our industry every single day.</p>
+                </div>
+                <div class='p-8 bg-white rounded-xl shadow-sm border-t-4 border-brand-primary'>
+                    <div class='text-4xl mb-4'>???</div>
+                    <h3 class='text-xl font-bold mb-2'>Reliability</h3>
+                    <p class='text-gray-600'>Our clients trust us because we deliver consistent, high-quality results.</p>
+                </div>
+                <div class='p-8 bg-white rounded-xl shadow-sm border-t-4 border-brand-primary'>
+                    <div class='text-4xl mb-4'>??</div>
+                    <h3 class='text-xl font-bold mb-2'>Global Scale</h3>
+                    <p class='text-gray-600'>Operating across multiple continents to serve our clients wherever they are.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id='services' class='section'>
-        <h2>Our Services</h2>
-        <ul class='services-list'>
-            <li>Fleet Sales</li><li>Diesel Maintenance</li><li>Custom Rigging</li><li>Leasing Options</li>
-        </ul>
-    </section>
-    <section id='contact' class='section contact'>
-        <h2>Contact Us</h2>
-        <form class='contact-form'>
-            <input type='text' placeholder='Your Name' required>
-            <input type='email' placeholder='Your Email' required>
-            <textarea rows='5' placeholder='Your Message' required></textarea>
-            <button type='submit' class='btn'>Send Message</button>
-        </form>
-    </section>
-    <footer>
-        &copy; 2026 HeavyHaul Trucks. All rights reserved.
-    </footer>
-</body>
-</html>
+</main><footer class='bg-gray-900 text-white py-10'>
+    <div class='container mx-auto text-center'>
+        <p class='text-lg font-bold mb-2'>HeavyHaul Trucks</p>
+        <p class='text-gray-400'>&copy; 2026 HeavyHaul Trucks. All rights reserved.</p>
+    </div>
+</footer></body></html>
